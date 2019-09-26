@@ -1,0 +1,20 @@
+<h1>Albums for {{title}}</h1>
+
+<main class="site-main">
+  <div class="wrap">
+
+    <div class="artist-grid">
+      {{#each allAlbums}}
+      {{#if this.images.0.url}}
+      <img src={{this.images.0.url}}>
+      {{else}}
+      <img src="/images/placeholder-image.jpg">
+      {{/if}}
+      <div class="caption">
+        {{this.name}}
+        <a href="/tracks/{{id}}">View Tracks</a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</main>

@@ -1,0 +1,14 @@
+<div class="home-bg">
+  <div class="form-wrapper">
+    <form autocomplete=off id="searchform" action="/search" method="POST">
+      <div class="autocomplete">
+        <input type="search" id="artist" name="artist" placeholder="Please fill in the name of a artist">
+        <div id="autocomplete-items" class="autocomplete-items"></div>
+      </div>
+      <button class="bigbutton">Search artist</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/javascripts/autocomplete.js"></script>
